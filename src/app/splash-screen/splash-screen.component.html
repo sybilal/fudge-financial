@@ -1,0 +1,11 @@
+<div (click)="isOpen=true">
+    <div class="logo" [@movelogo]="isOpen?'raised':'cent'"><img src="/assets/img/logo.svg" alt=""></div>
+    <div class="content" [@raiseContent]="!isOpen?'hidden':'shown'">
+        <div class="content-header">All your finances in one place.</div>
+        <div class="content-text">Find out how our team of highly qualified financial consultants can help you
+            achieve
+            your financial goals.</div>
+    </div>
+    <button routerLink="dashboard" class="btnDashboard" [@raiseButton]="!isOpen?'hidden':'shown'">View Dashboard</button>
+    <img class="arrow-down" [@fadeOut]="!isOpen?'shown':'hidden'" src="/assets/img/arrow-down.svg" height="22px" alt="">
+</div>

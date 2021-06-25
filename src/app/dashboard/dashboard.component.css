@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+}
+.dashboard-data {
+  background-color: white;
+  color: black;
+  padding: 30px 20px;
+  width: 100%;
+}
