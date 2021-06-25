@@ -1,4 +1,4 @@
-<div (click)="isOpen=true">
+<div (click)="isOpen=true" style="cursor: pointer;height: 100vh;">
     <div class="logo" [@movelogo]="isOpen?'raised':'cent'"><img src="/assets/img/logo.svg" alt=""></div>
     <div class="content" [@raiseContent]="!isOpen?'hidden':'shown'">
         <div class="content-header">All your finances in one place.</div>
@@ -6,6 +6,9 @@
             achieve
             your financial goals.</div>
     </div>
-    <button routerLink="dashboard" class="btnDashboard" [@raiseButton]="!isOpen?'hidden':'shown'">View Dashboard</button>
+    <div>
+        <button routerLink="dashboard" class="btnDashboard" [@raiseButton]="!isOpen?'hidden':'shown'" [disabled]="!isOpen">View Dashboard</button>
+
+    </div>
     <img class="arrow-down" [@fadeOut]="!isOpen?'shown':'hidden'" src="/assets/img/arrow-down.svg" height="22px" alt="">
 </div>

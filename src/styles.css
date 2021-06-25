@@ -2,4 +2,15 @@
 @import "~font-awesome/css/font-awesome.min.css";
 body {
   font-family: "Helvetica", "Arial", sans-serif;
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-image: radial-gradient(
+      rgba(46, 73, 55, 0.85) 20%,
+      rgb(46, 73, 55) 80%
+    ),
+    url(/assets/img/dubai.jpg);
+}
+
+.d-none{
+  display: none;
 }

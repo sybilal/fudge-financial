@@ -7,3 +7,114 @@
   padding: 30px 20px;
   width: 100%;
 }
+
+.stats {
+  grid-area: stats;
+}
+.health {
+  grid-area: health;
+}
+.performance {
+  grid-area: performance;
+}
+.goals {
+  grid-area: goals;
+}
+.news {
+  grid-area: news;
+}
+.comments {
+  grid-area: comments;
+}
+.users {
+  grid-area: users;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "stats stats health health"
+    "performance performance goals goals"
+    "news news comments users";
+  grid-gap: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.grid-container > .grid-item {
+  padding: 20px;
+}
+
+.grid-item .grid-item-title {
+  font-weight: bold;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.pill-selected {
+  background-color: #f1f4f6;
+  font-size: 12px;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+.grid-item-content {
+  margin-top: 10px;
+  display: flex;
+}
+
+.news,
+.comments,
+.users {
+  height: 600px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+}
+
+.card-shadow {
+  height: 65px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.amount {
+  font-size: 26px;
+  color: #383838;
+}
+
+.amount-desc {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #505050;
+}
+
+.health-words {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.health-words > div {
+  font-size: 12px;
+}
+
+.health-bar {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    #e8b86d 50%,
+    rgba(76, 199, 84, 1) 100%
+  );
+  margin-bottom: 5px;
+}

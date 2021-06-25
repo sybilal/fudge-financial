@@ -1,8 +1,8 @@
 .logo {
   position: absolute;
   left: 50%;
-  bottom: 0%;
-  transform: translate(-50%, -50%);
+  bottom: 50%;
+  transform: translateX(-50%);
 }
 
 .arrow-down {
@@ -11,7 +11,7 @@
   position: absolute;
   left: 50%;
   bottom: 0%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
 
 .content {
@@ -22,6 +22,8 @@
   left: 50%;
   bottom: 0%;
   transform: translateX(-50%);
+  opacity: 0;
+  color: white;
 }
 
 .content-header {
@@ -42,7 +44,6 @@
   padding: 10px 40px;
   margin: 40px 0px;
   background-color: transparent;
-  color: white;
   border: 1px solid white;
   border-radius: 10px;
   font-weight: 100;
@@ -51,7 +52,9 @@
 
   left: 50%;
   bottom: 0%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  opacity: 0;
 
   cursor: pointer;
+  color: white;
 }
