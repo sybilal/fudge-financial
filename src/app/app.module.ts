@@ -9,6 +9,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidebarComponent } from './dashboard/layout/sidebar/sidebar.component';
 import { SidebarItemComponent } from './dashboard/layout/sidebar-item/sidebar-item.component';
 import { HeaderComponent } from './dashboard/layout/header/header.component';
+import { ChartsModule } from 'ng2-charts';
+import { PerformanceChartComponent } from './dashboard/components/performance-chart/performance-chart.component';
+import { GoalsChartsComponent } from './dashboard/components/goals-charts/goals-charts.component';
+import { IndustryNewsComponent } from './dashboard/components/industry-news/industry-news.component';
+import { TopCommentsComponent } from './dashboard/components/top-comments/top-comments.component';
+import { UsersComponent } from './dashboard/components/users/users.component';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthInterceptor } from './services/auth.interceptor';
 
 @NgModule({
   declarations: [
@@ -18,13 +26,24 @@ import { HeaderComponent } from './dashboard/layout/header/header.component';
     SidebarComponent,
     SidebarItemComponent,
     HeaderComponent,
+    PerformanceChartComponent,
+    GoalsChartsComponent,
+    IndustryNewsComponent,
+    TopCommentsComponent,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ChartsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: AuthInterceptor,
+    multi: true
+  },],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

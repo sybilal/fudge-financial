@@ -4,13 +4,75 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   background-repeat: repeat-y;
   background-size: cover;
+  
   background-image: radial-gradient(
-      rgba(46, 73, 55, 0.85) 20%,
-      rgb(46, 73, 55) 80%
+      circle,
+      rgba(2, 54, 20, 0.82) 0%,
+      rgba(2, 54, 20, 0.83) 25%,
+      rgba(2, 54, 20, 0.84) 50%,
+      rgba(2, 54, 20, 0.95) 75%,
+      rgba(2, 54, 20, 1) 100%
     ),
     url(/assets/img/dubai.jpg);
 }
 
-.d-none{
+.d-none {
   display: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "stats stats health health"
+    "performance performance goals goals"
+    "news news comments users";
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.grid-container > .grid-item {
+  padding: 20px;
+}
+
+.grid-item .grid-item-title {
+  font-weight: bold;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 12px;
+}
+
+.pill-selected {
+  background-color: #f1f4f6;
+  font-size: 12px;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+.grid-item-content {
+  margin-top: 10px;
+  display: flex;
+}
+
+.card-shadow {
+  height: 65px;
+  box-shadow: 0 0px 40px 0 rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.news,
+.comments,
+.users {
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
 }

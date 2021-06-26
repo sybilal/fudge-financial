@@ -1,0 +1,15 @@
+<div class="grid-item-title" style="padding-bottom: 15px;">Industry News</div>
+
+<div *ngFor="let newsItem of news; let i = index" class="news-item">
+
+    <div style="display: flex;flex-direction: column;">
+        <div style="font-size: 12px;padding-bottom: 10px;color: rgb(134, 134, 134);">21 May 2021</div>
+        <div style="font-weight: bold;padding-bottom: 10px;">{{newsItem.title}}</div>
+        <div style="padding-bottom: 10px;">{{newsItem.body}}</div>
+
+        <a href="#" style="
+        text-decoration: none;
+        font-size: 12px;">Read full article</a>
+
+    </div>
+</div>

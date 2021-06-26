@@ -31,3 +31,13 @@ export let fadeOut =
         state('hidden', style({ opacity: 0 })),
         transition('shown => hidden', animate('1000ms')),
     ]);
+
+
+export let hideDashboard =
+    // the fade-in/fade-out animation.
+    trigger('hideDashboard', [
+        state('shown', style({ opacity: 1 })),
+        state('hidden', style({ opacity: 0 })),
+        transition('shown => hidden', animate('1000ms')),
+        transition('hidden => shown', animate('1000ms')),
+    ]);

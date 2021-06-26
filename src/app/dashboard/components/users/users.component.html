@@ -1,0 +1,16 @@
+<div class="grid-item-title">Users</div>
+
+<div *ngFor="let user of users; let i = index" class="user">
+    <img height="50" width="50" src="https://source.unsplash.com/random/200x200?sig={{i}}"
+        style="border-radius: 50%;object-fit: cover;">
+    <div style="width: 20px;"></div>
+    <div style="display: flex;flex-direction: column;">
+        <div style="font-weight: bold;padding-bottom: 10px;">{{user.name}}</div>
+
+        <div style="display: flex; align-content: center;">
+            <i class="fa fa-circle" style="color: green;font-size: 10px;padding-right: 10px;"></i>
+            <div style="font-weight: bold;font-size: 12px;color: rgb(134, 134, 134);">Online</div>
+
+        </div>
+    </div>
+</div>

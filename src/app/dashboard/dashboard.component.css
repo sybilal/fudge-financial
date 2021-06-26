@@ -29,63 +29,6 @@
 .users {
   grid-area: users;
 }
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "stats stats health health"
-    "performance performance goals goals"
-    "news news comments users";
-  grid-gap: 10px;
-  padding: 10px;
-  margin-top: 20px;
-}
-
-.grid-container > .grid-item {
-  padding: 20px;
-}
-
-.grid-item .grid-item-title {
-  font-weight: bold;
-}
-
-.title-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 40px;
-}
-
-.pill-selected {
-  background-color: #f1f4f6;
-  font-size: 12px;
-  padding: 8px 15px;
-  border-radius: 20px;
-}
-
-.grid-item-content {
-  margin-top: 10px;
-  display: flex;
-}
-
-.news,
-.comments,
-.users {
-  height: 600px;
-  border: 1px solid #d9d9d9;
-  border-radius: 10px;
-}
-
-.card-shadow {
-  height: 65px;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-}
-
 .amount {
   font-size: 26px;
   color: #383838;
@@ -117,4 +60,20 @@
     rgba(76, 199, 84, 1) 100%
   );
   margin-bottom: 5px;
+}
+
+.dashboard-data {
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

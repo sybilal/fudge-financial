@@ -1,0 +1,33 @@
+.grid-item-title {
+  font-size: 16px;
+  text-align: center;
+}
+
+.card-shadow {
+  justify-content: space-between;
+  align-items: center;
+  height: unset;
+  padding: unset;
+}
+
+.grid-item-title {
+  width: 130px;
+}
+/* 
+.overview-num {
+  position: absolute;
+  font-size: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 0px;
+  text-align: center;
+  width: 75%;
+} */
+
+.donut-inner {
+  position: absolute;
+  margin-left: 43px;
+  margin-top: 49px;
+  text-align: center;
+}

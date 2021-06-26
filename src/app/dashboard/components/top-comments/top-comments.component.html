@@ -1,0 +1,13 @@
+<div class="grid-item-title">Top Comments</div>
+
+<div *ngFor="let comment of comments; let i = index" class="comment">
+    <img height="30" width="30" src="https://source.unsplash.com/random/200x200?sig={{i}}"
+        style="border-radius: 50%;object-fit: cover;">
+    <div style="width: 60px;"></div>
+    <div style="display: flex;flex-direction: column;">
+        <div style="font-weight: bold;">{{comment.name}}</div>
+        <div style="font-weight: bold;font-size: 12px;padding-bottom: 10px;color: rgb(134, 134, 134);">2 hours ago</div>
+        <div style="padding-bottom: 10px;">{{comment.body}}</div>
+
+    </div>
+</div>

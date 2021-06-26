@@ -1,0 +1,31 @@
+<div class="card-shadow">
+    <div style="padding:20px 20px">
+        <div class="grid-item-title">
+            {{title}}
+        </div>
+        <div style="height: 10px;"></div>
+
+        <div>
+            <div class="donut-inner">
+                <div>{{percentage}}%</div>
+                <div style="font-size: 12px;">On Track</div>
+            </div>
+
+            <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType"
+                [options]="chartOptions" [colors]="chartColors" width="100" height="100">
+            </canvas>
+        </div>
+    </div>
+    <div style="height: 1px;
+    background-color: #80808069;
+    width: 100%;
+    margin-top: 10px;
+    "></div>
+
+    <div style="display: flex;justify-content: space-between;width: 100%;padding:10px">
+        <div style="font-size: 12px;padding-left: 10px;">&#163;{{amount1}}</div>
+        <div style="font-size: 12px;padding-right: 10px;color: #7f7f7f;">&#163;{{amount2}}</div>
+
+    </div>
+
+</div>
