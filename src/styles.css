@@ -13,7 +13,7 @@ body {
       rgba(2, 54, 20, 0.95) 75%,
       rgba(2, 54, 20, 1) 100%
     ),
-    url(/assets/img/dubai.jpg);
+    url(assets/img/dubai.jpg);
 }
 
 .d-none {
