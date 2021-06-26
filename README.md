@@ -1,6 +1,6 @@
 # Fudge Financial
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
+## [Live Demo](https://sybilal.github.io/fudge-financial/)
 
 ## Project Setup for Mac
 
@@ -23,11 +23,17 @@ After that, view Node,js version info
 
 `npm install -g @angular/cli`
 
-### Step 4 - Run Development Server
+### Step 4 - Clone Repository
+
+`git clone https://github.com/sybilal/fudge-financial.git`
+
+### Step 5 - Run Development Server
+
+Navigate to the project's directory.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-### Step 5 - Build For Production
+### Step 6 - Build For Production
 
 `ng build --prod`
 
