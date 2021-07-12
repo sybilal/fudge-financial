@@ -4,7 +4,7 @@ body {
   font-family: "Helvetica", "Arial", sans-serif;
   background-repeat: repeat-y;
   background-size: cover;
-  
+
   background-image: radial-gradient(
       circle,
       rgba(2, 54, 20, 0.82) 0%,
@@ -30,6 +30,31 @@ body {
   grid-gap: 10px;
   padding: 10px;
   margin-top: 20px;
+}
+
+@media (max-width: 1360px) {
+  .grid-container {
+    grid-template-areas:
+      "stats stats stats stats"
+      "health health health health"
+      "performance performance performance performance"
+      "goals goals goals goals"
+      "news news news news"
+      "comments comments users users";
+  }
+}
+
+@media (max-width: 770px) {
+  .grid-container {
+    grid-template-areas:
+      "stats stats stats stats"
+      "health health health health"
+      "performance performance performance performance"
+      "goals goals goals goals"
+      "news news news news"
+      "comments comments comments comments"
+      "users users users users";
+  }
 }
 
 .grid-container > .grid-item {
@@ -58,6 +83,16 @@ body {
 .grid-item-content {
   margin-top: 10px;
   display: flex;
+}
+
+@media (max-width: 810px) {
+  .stats > .grid-item-content {
+    display: block;
+  }
+
+  .stats .card-shadow{
+    margin-bottom: 20px;
+  }
 }
 
 .card-shadow {
